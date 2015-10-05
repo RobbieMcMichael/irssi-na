@@ -8,6 +8,7 @@ sub naAlert {
   my $title = ("$target" eq "" ? "$nick to $server->{nick}" : "$nick to $target");
   my $token = Irssi::settings_get_str("pushover_app_token");
   my $user  = Irssi::settings_get_str("pushover_user_token");
+  my $url   = Irssi::settings_get_str("pushover_url");
 
   if ($token eq "") {
     print "pushover_app_token not set";
@@ -24,12 +25,15 @@ sub naAlert {
             "user"    => $user,
             "message" => $msg,
             "title"   => $title,
+            "url"     => $url,
            ]);
       }
     }
   }
 };
 
+
+Irssi::settings_add_str("pushover", "pushover_url", "");
 Irssi::settings_add_str("pushover", "pushover_app_token", "");
 Irssi::settings_add_str("pushover", "pushover_user_token", "");
 

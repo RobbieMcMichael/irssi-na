@@ -24,3 +24,10 @@ In irssi
 You will now get a pushover notification when someone mentions you
 or sends you a private message.
 
+You can also optionally associate a URL with the notifications so
+that you can launch an SSH client.
+
+    /set pushover_url ssh://example.org
+
+This works well with JuiceSSH which seems to just bring up an already
+active connection instead of launching a new one if it can.
