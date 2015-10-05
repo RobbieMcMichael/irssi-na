@@ -4,7 +4,7 @@ Pushover integration for irssi.
 
 ## Getting Started
 
-Copy the `na.pl` script into your ~/.irssi/scripts/` directory.
+Copy the `na.pl` script into your `~/.irssi/scripts/` directory.
 
 You will need the following perl libraries
 
