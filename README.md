@@ -20,6 +20,7 @@ In irssi
     /set pushover_app_token <token>
     /set pushover_user_token <token>
     /run na
+    /nadebug test message
 
 You will now get a pushover notification when someone mentions you
 or sends you a private message.
